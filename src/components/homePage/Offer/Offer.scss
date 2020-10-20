@@ -1,0 +1,78 @@
+@import "../../global.scss";
+
+.offer__containers {
+  @include flexMixin(space-between, flex-start);
+  padding: 100px 0;
+}
+.offer__item {
+  width: 30%;
+  border: 1px solid #707070;
+  padding: 35px 5%;
+  background-color: #333333;
+  h4 {
+    font-weight: lighter;
+    font-size: 24px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+  }
+}
+.offer__price {
+  font-size: 43px;
+  font-weight: lighter;
+  opacity: 0.9;
+}
+.offer__description {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: lighter;
+  opacity: 0.8;
+  min-height: 120px;
+}
+.offer__ul {
+  margin: 50px auto;
+  width: 100%;
+  opacity: 0.8;
+}
+.offer__li {
+  margin-top: 30px;
+  @include flexMixin(space-between, center);
+  p {
+    width: 100%;
+  }
+}
+@media (max-width: 1400px) {
+  .offer__item {
+    width: 30%;
+  }
+}
+@media (max-width: 1200px) {
+  .offer__item {
+    width: 100%;
+    margin-top: 80px;
+    padding: 10%;
+    h4 {
+      font-size: 40px;
+    }
+  }
+  .offer__price {
+    font-size: 50px;
+  }
+  .offer__containers {
+    flex-direction: column;
+  }
+  .offer__description {
+    font-size: 20px;
+  }
+  .offer__li {
+    text-align: center;
+    margin-top: 10vw;
+    p {
+      font-size: 4vw;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .offer__item {
+    padding: 10%;
+  }
+}

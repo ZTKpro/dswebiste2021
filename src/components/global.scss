@@ -1,0 +1,59 @@
+$mainColor: #00b9ff;
+$background-color: #000000;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s;
+}
+
+body {
+  background-color: #222222;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+:root {
+  font-size: 16px;
+}
+
+.g-container {
+  width: 70%;
+  margin: 0px auto;
+}
+
+@mixin flexMixin($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+.g-btn {
+  @include flexMixin(center, center);
+  text-align: center;
+  opacity: 0.9;
+  cursor: pointer;
+}
+.g-btn:hover {
+  opacity: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+}
+
+.fadeIn {
+  opacity: 0;
+  transition: 3s;
+}

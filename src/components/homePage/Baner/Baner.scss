@@ -1,0 +1,12 @@
+@import "../../global.scss";
+
+.baner {
+  height: 250px;
+  @include flexMixin(center, center);
+  background-color: #171717;
+  width: 100%;
+  overflow: hidden;
+  img {
+    margin: 0 60px;
+  }
+}
