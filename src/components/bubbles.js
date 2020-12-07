@@ -66,26 +66,7 @@ const Bubble = styled.div`
     width: 150px;
   }
   @media (max-width: 1000px) {
-    &.first {
-      height: 200px;
-      width: 200px;
-    }
-    &.second {
-      height: 350px;
-      width: 350px;
-    }
-    &.third {
-      height: 100px;
-      width: 100px;
-    }
-    &.four {
-      height: 350px;
-      width: 350px;
-    }
-    &.five {
-      height: 150px;
-      width: 150px;
-    }
+    display: none;
   }
 `
 

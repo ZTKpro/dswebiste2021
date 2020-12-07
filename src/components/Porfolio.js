@@ -6,7 +6,10 @@ import Crypto from "./assets/cryptobuffet.png"
 import Covid from "./assets/Covid.png"
 
 const WrapperPorfolio = styled.section`
+  margin: 0 auto;
   margin-top: 100px;
+  max-width: 90vw;
+  overflow-x: hidden;
   h2 {
     font-size: 55px;
     text-align: center;
